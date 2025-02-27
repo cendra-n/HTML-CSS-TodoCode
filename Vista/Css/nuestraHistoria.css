@@ -1,0 +1,85 @@
+/* Fondo que cubre toda la pantalla */
+body {
+    background-image: url("../imagenes/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el logo */
+body::before {
+    content: "";
+    background-image: url("../imagenes/logo.png");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+
+/* Estilo para el encabezado */
+.titulo {
+    background-color: #670a0a;
+    width: 100%;
+    padding: 55px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Título del encabezado */
+.titulo h2 {
+    margin: 0;
+    color: black;
+    text-align:center;
+    font-size: 25px;
+    text-shadow: 1px 2px 7px white;
+}
+
+/* Estilo para la sección de historia */
+.nuestraHistoria {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(177, 168, 168, 0.6); /* Fondo blanco semitransparente */
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.nuestraHistoria p {
+    margin: 10px 0;
+}
+
+/* Botón de volver al inicio */
+.botonVolver {
+    text-align: center;
+}
+
+.menu {
+    background-color: #333333;
+    color: #fff;
+    border-style: solid;
+    border-color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.menu:hover {
+    background-color: #670a0a;
+}
+
